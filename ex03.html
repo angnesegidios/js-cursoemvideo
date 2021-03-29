@@ -7,7 +7,7 @@
     <title>Ex. 03 Aula JS - Curso em video</title>
     <style>
         body {
-            background-color: #72a4c5;
+            background-color: #312fa0;
             color: white;
             font: normal 20pt Arial;
         }
@@ -33,22 +33,44 @@
 </head>
 <body>
 
-    <p>Ex. 03 Aula JS - Curso em video <br>
-    </p>
-
+    <p>Ex. 03 Aula JS - Curso em video <br>    </p>
     <pre>
         <code>
 Aula 06
 &lsaquo; script &rsaquo;
-var nome = window.prompt('Qual seu nome?') // abre uma janela com um campo para digitar.
-window.alert("É um grande prazer em te conhecer, " + nome + "!")
+var n1 = Number(window.prompt('Digite um número: ')) // Se lê assim: n1 vai receber(=) o prompt que abre uma janela, convertido para um numero.
+var n2 = Number(window.prompt('Digite outro número: '))
+var soma = n1 + n2
+// window.alert('A soma dos valores é  ' + soma)
+window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`) // modo template String
+// String(n) ou n.String() para converter numero em String.
+// Number ou Number.parseFloat ou Number.parseInt usa-se para converter String em numero.
+// Number deixa o JS descidir se é float ou int 
+
+/* Formatação de novas Strings
+var s = 'JS'
+'Eu estou aprendendo s' // não faz interpolação 
+'Eu estou aprendendo ' + s // usa concatenação 
+`Eu estou aprendendo ${s}` // usa-se crase e modelo é template String (modelo mais novo)          
+
+s.length  // Quantos caracteres a String tem. Não usa-se () 
+s.toUpperCase() // tudo para MAIÚSCULAS
+s.toLowerCase() // tudo para minúsculas
+*/
 &lsaquo; /script &rsaquo;
         </code>
     </pre>
 
     <script>
-        var nome = window.prompt('Qual seu nome?') // abre uma janela com um campo para digitar.
-        window.alert("É um grande prazer em te conhecer, " + nome + "!")
+        var n1 = Number(window.prompt('Digite um número: ')) // Se lê assim: n1 vai receber(=) o prompt que abre uma janela, convertido para um numero inteiro(Number.parseInt).
+        var n2 = Number(window.prompt('Digite outro número: '))
+        var soma = n1 + n2
+        // window.alert('A soma dos valores é  ' + soma)
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`) // modo template String
+        // String(n) ou n.String() para converter numero em String.
+        // Number ou Number.parseFloat ou Number.parseInt usa-se para converter String em numero.
+        // Number deixa o JS descidir se é float ou int 
+       
     </script>
 
 </body>
