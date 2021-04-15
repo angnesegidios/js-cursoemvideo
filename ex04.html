@@ -32,9 +32,7 @@
 
 </head>
 <body>
-
     <p>Ex. 04 Aula JS - Curso em video <br> </p>
-    
     <script>
        var nome = window.prompt('Qual seu nome? ')
        document.write(`Olá, <i>${nome}</i>!! Seu nome tem ${nome.length} letras. <br/> `)  // <strong> é negrito subistitui o <b>
@@ -42,7 +40,7 @@
        document.write (`Seu nome em minúsculas é: ${nome.toLowerCase()}<br/>`)
        
     </script>
-
+    
     <pre>
         <code>
 <strong>Aula 06</strong>
@@ -70,112 +68,5 @@ n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'}) // ficando US$ 
 &lsaquo; /script &rsaquo;
         </code>
     </pre>
-<hr>
-<pre>
-    <code><strong>
-Aula 07 e 08
-Operadores:
- -Aritiméticos</strong>
-        5+2 é 7
-        5-2 é 3
-        5*2 é 10
-        5/2 é 2.5
-        5%2 é 1
-        5**2 é 25 // 5² é 25  
-  <strong>   
- -Atribuição 
-        Precedência</strong>
-        () ** * / % + - 
-        ---------------->
-        // ordem de importância da esquerda p/ direita
-        // ** é elevação, expoente.
-<strong>
- -Relacionais</strong>
-    &lsaquo; &rsaquo; &lsaquo;= &rsaquo;= == != 
-    // != é não igual ou diferente. 
-    // === identicos e mesmo tipo.
-    // == é igual. 
-
-        5 == 5    true 
-        5 == '5'  true 
-        5 === '5' false // diferente, são tipos diferentes. valor interno é o mesmo.
-        5 === 5   true // pois são identicos
-<strong> 
- -Lógicos</strong>
-    !   // quer dizer negação    (não) 
-    &&  // quer dizer conjunção  (e) 
-    ||  // quer dizer disjunção  (ou) 
-<strong>
-        Negação</strong>
-        ! true -> false // não verdadeiro é falso
-        false -> true // não falso é verdadeiro 
-    <strong>
-        Conjunção</strong> // valor binario que tem 2 logicos. Basta que um deles seja falso tudo é false 
-        true  && true  -> true   // Ex.: eu tenho 1 caneta red e 1 azul eu fico satisfeito, é true 
-        true  && false -> false  // Ex.: Qualquer outra combinação de canetas red, azul, verde, é false 
-        false && true  -> false  // Ex.: Combinação 2 red ou 2 azuis   é false
-        false && false -> false  // Ex.: 2 falsas é false 
-  <strong>
-        Disjunção</strong> // Basta um valor seja verdadeiro tudo vira verdadeiro.
-        true  || true  -> true  // Ex.: 1 valor seja verdadeiro tudo vira verdadeiro.
-        true  || false -> true  // Ex.: 1 valor seja verdadeiro tudo vira verdadeiro.
-        false || true  -> true  // Ex.: 1 valor seja verdadeiro tudo vira verdadeiro.
-        false || false -> false // Ex.: 2 falsos tudo false  
-    
-        Exp.: 
-            var a = 5
-            var b = 8
-            a > b && b % 2 == 0 
-            // quando tenho Aritiméticos, relacionais e Logicos na mesma expressão 
-            // Primeiro faz os Aritiméticos %
-            // Segundo os Relacionais > ==
-            // Terceiro os Logicos &&
-            Sendo b(8) % 2  dá 4
-            4 == 0 dá  4 resto 0
-            é verdadeiro
-            Sendo a(5) > b(8)  5 não é maior que 8 
-            é false falso 
-            falso && verdadeiro  é false falso 
-    
-            a &lsaquo;= b || b / 2 == 2
-            Sendo b(8) / 2  dá 4
-            4 == 2  4 não é igual a 2 
-            é false
-            Sendo a(5) &lsaquo;= b(8)  5 é menor ou igual a 8 
-            verdadeiro || false  é true verdadeiro   <strong>
-        Se na mesma expressão tiver um && (e), || (ou), ! (não), segue a sequencia certa: 
-        1º ! (nao), depois o && (e), depois || (ou)      </strong>
-  
-            idade &lsaquo;= 15 && idade &rsaquo;= 17 // a idade está entre 15 e 17? 
-            estado == 'RJ' || estado == 'SP'            // o estado é RJ ou SP?
-            salário > 1500 && sexo != 'M'            // o salário é maior de 1500 e não é Masculino?
-    <strong>
-        Precedência</strong>
-    Primeiro faz os Aritiméticos   () ** * / % + - 
-    Segundo os Relacionais         &lsaquo; &rsaquo; &lsaquo;= &rsaquo;= == != 
-    Terceiro os Logicos            ! (nao), && (e), || (ou)
-<img src="_image/aula8.precedencia.jpeg" alt="precedencia">
-<strong>
- -Ternário</strong>
-       // teste ? true : false
-
-        Exp.: 
-            média &lsaquo;= 7.0 ? "Aprovado" : "Reprovado"
-            var media = 5.5
-            média &lsaquo;= 7.0 ? "Aprovado" : "Reprovado" 
-            resposta Reprovado
-            var media += 3
-            media é 8.5
-            média &lsaquo;= 7.0 ? "Aprovado" : "Reprovado"
-            resposta Aprovado
-
-            var idade = 19
-            var r = idade &lsaquo;= 18 ? 'maior' : 'menor'
-            // a variavel r vai receber ou maior ou menor
-            // vai depender do resultado da idade é maior ou igual a 18.
-            // 19 &lsaquo;= 18 é verdadeiro
-            r é maior
-</code>
-</pre>
 </body>
 </html>
