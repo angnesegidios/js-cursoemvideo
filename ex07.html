@@ -37,18 +37,67 @@
     <h1>Iniciando estudos DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em JS </p>
-    <div>Clique em mim!</div>
+    <div id="msg">Clique em mim!</div>
 
     <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write('Está escrito assim: ' + p1.innerText)
+        /* usa-se [] quando esta no plural getElementsBy 
+        [] indica qual 'p' que irá mostra na tela. */
+        // p1.style.color = 'red' /* muda a cor da variavel 'p1' */
+        // corpo.style.background = 'gray' /*muda a cor de fundo da pagina*/
+        // document.write(p1.innerHTML) 
+        /* innerText vem somente o texto sem formatação
+        innerHTML vem com todas as formatações do html. (vem com todos os filhos)*/
         
+        
+        var d = window.document.getElementById('msg')
+        // d.innerText = 'Estou aguardando..!.'
+        d.style.color = 'red'
+        d.style.background = 'white'
+        // window.document.getElementById('msg').innerText = 'Olá!!'
+        /* trocou a mensagem do 'estou aguardando' por 'Olá!! 2' */
+        d.innerText = 'Olá!!! 3'
+        // modo simplificado do codigo do olá!!2
+
+
+        // var d = window.document.querySelector('div#msg')
+        // no querySelector quando usar o id usa o #, quando for usar o class usa o '.' ponto.
+        // querySelector browser mais novos. antigos nao funciona.
 
     </script>
-
+<br>
     <pre>
         <code>
 Aula 09 - DOM
 
 &lsaquo; script &rsaquo;
+var corpo = window.document.body
+var p1 = window.document.getElementsByTagName('p')[1]
+window.document.write('Está escrito assim: ' + p1.innerText)
+/* usa-se [] quando esta no plural getElementsBy 
+[] indica qual 'p' que irá mostra na tela. */
+// p1.style.color = 'red' /* muda a cor da variavel 'p1' */
+// corpo.style.background = 'gray' /*muda a cor de fundo da pagina*/
+// document.write(p1.innerHTML) 
+/* innerText vem somente o texto sem formatação
+innerHTML vem com todas as formatações do html. (vem com todos os filhos)*/
+
+
+var d = window.document.getElementById('msg')
+// d.innerText = 'Estou aguardando..!.'
+d.style.color = 'red'
+d.style.background = 'white'
+// window.document.getElementById('msg').innerText = 'Olá!!'
+/* trocou a mensagem do 'estou aguardando' por 'Olá!! 2' */
+d.innerText = 'Olá!!! 3'
+// modo simplificado do codigo do olá!!2
+
+
+// var d = window.document.querySelector('div#msg')
+// no querySelector quando usar o id usa o #, quando for usar o class usa o '.' ponto.
+// querySelector browser mais novos. antigos nao funciona.
 &lsaquo; /script &rsaquo;
         </code>
     </pre>
