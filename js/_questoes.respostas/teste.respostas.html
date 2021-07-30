@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes</title>
+    <style>
+        img {
+            width: 50%;
+            height: 50%;
+        }
+        pre {
+            border: 1px; solid: #000;
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+            background-color: burlywood;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Respostas das aulas.</h1>
+    <p> <h2>Aula 06</strong>
+   
+    <pre>
+        <code>
+<img src="quest.aula6.jpeg" alt="aula 6">
+
+            &lsaquo; script &rsaquo;
+  Q01
+//var n1 = Number(window.prompt('Digite um nº'))
+// n1 recebe prompt que converte para Number
+
+  Q02
+ var n1 = Number(window.prompt('Q02: Digite um nº'))
+ var n2 = Number(window.prompt('Q02: Digite um nº'))
+ var soma = n1 + n2 
+ alert(`A soma é: ${soma}`)  
+ // Number converte a String(prompt) em numero.
+ // Number pode ser tanto inteiro ou real.          
+
+  Q03
+ var nome = window.prompt('Q03: Qual seu nome? ')
+ alert(`Seu nome em MAIUSÚLO é: ${nome.toUpperCase()}`)
+ 
+  Q04
+ var moeda = Number(window.prompt('Q04: Digite um valor: '))
+ alert(`Q04: O valor com decímais é ${moeda.toFixed(2)} com ponto (.)`) // com 2 casas decimais depois do ponto
+ alert("Q04: O valor com decímais é " + moeda.toFixed(2).replace('.' , ',') + " com virgula (,)") // TROCA o ponto por virgula
+ document.write(`Q04: O valor reais é R$ ${moeda.toFixed(2).replace('.' , ',').toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`)
+ // troca o ponto por virgula e ficando R$ "valor da moeda digitada" no browser ficara certo a pontuação
+               &lsaquo; /script &rsaquo;
+        </code>
+    </pre> </p>
+<br>
+    <script>
+        
+var n1 = Number(window.prompt('Q02: Digite um nº'))
+var n2 = Number(window.prompt('Q02: Digite um nº'))
+var soma = n1 + n2 
+alert(`A soma é: ${soma}`)
+
+var nome = window.prompt('Q03: Qual seu nome? ')
+alert(`Seu nome em MAIUSÚLO é: ${nome.toUpperCase()}`)
+
+var moeda = Number(window.prompt('Q04: Digite um valor: '))
+alert(`Q04: O valor com decímais é ${moeda.toFixed(2)} com ponto (.)`) // com 2 casas decimais depois do ponto
+alert("Q04: O valor com decímais é " + moeda.toFixed(2).replace('.' , ',') + " com virgula (,)") // TROCA o ponto por virgula
+document.write(`Q04: O valor reais é R$ ${moeda.toFixed(2).replace('.' , ',').toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`)
+// troca o ponto por virgula e ficando R$ "valor da moeda digitada" no browser ficara certo a pontuação
+    </script>
+<hr>
+<p> <h2>Aula 07 e 08</strong>
+<pre>
+    <code>
+<img src="quest.aula78.jpeg" alt="">
+Q01
+=   recebe
+==  igual
+=== identicos e mesmo tipo
+
+Q02
+&& depois ||
+
+Q03
+? : 
+    </code>
+</pre>
+
+</body>
+</html>
